@@ -29,11 +29,15 @@ main header.navbar {
   flex-direction: row;
   justify-content: space-between;
   padding: 2rem;
-  background-color: rgb(114, 195, 213);
   position: fixed;
 }
+main header.navbar .logo img {
+  width: 126px;
+  height: 26px;
+  aspect-ratio: 7/2;
+}
 main header.navbar .icon {
-  padding: 0.7rem 1rem;
+  padding: 0rem 1rem;
   font-size: 1.5rem;
 }
 main header.navbar .menu {
@@ -42,8 +46,13 @@ main header.navbar .menu {
 
 @media (min-width: 960px) {
   main header.navbar {
-    padding: 1rem 3rem;
+    padding: 0.3rem 3rem;
     align-items: center;
+  }
+  main header.navbar .logo img {
+    width: 126px;
+    height: 26px;
+    aspect-ratio: 7/2;
   }
   main header.navbar .icon {
     display: none;
@@ -63,8 +72,17 @@ main header.navbar .menu {
     font-weight: 500;
     opacity: 0.7;
   }
+  main header.navbar .menu a:hover {
+    border-radius: 1.5rem;
+    color: #0468d7;
+    transition: all 0.1s ease-in-out;
+  }
+  main header.navbar .menu h4, main header.navbar .menu button:hover {
+    cursor: pointer;
+  }
   main header.navbar .menu .eco {
     color: #0468d7;
+    opacity: 1;
   }
   main header.navbar .menu h4 {
     font-weight: 300;
