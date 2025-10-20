@@ -233,6 +233,60 @@ main section.view3 .bottom .buttons p {
   opacity: 1;
   padding-left: 2rem;
 }
+main section.view4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 4rem 2rem;
+  background-image: linear-gradient(35deg, #fcfce2 40%, #f5fbfe 90%);
+}
+main section.view4 .top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main section.view4 .top img {
+  width: 100%;
+}
+main section.view4 .bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main section.view4 .bottom h5 {
+  font-size: 1.3rem;
+  opacity: 0.6;
+}
+main section.view4 .bottom h1 {
+  font-size: 3.3rem;
+  font-weight: 650;
+  line-height: 1;
+}
+main section.view4 .bottom p {
+  width: 90%;
+  padding-top: 1.5rem;
+  font-size: 1.3rem;
+  opacity: 0.7;
+}
+main section.view4 .bottom .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  padding: 2rem 0;
+}
+main section.view4 .bottom .buttons button {
+  width: 60%;
+  border-radius: 2rem;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  background-color: #0468d7;
+  color: white;
+  font-weight: 700;
+}
 
 @media (min-width: 960px) {
   main header.navbar {
@@ -356,5 +410,27 @@ main section.view3 .bottom .buttons p {
     background-color: #0468d7;
     color: white;
     transition: all 0.2s ease-in-out;
+  }
+  main section.view4 {
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem 12rem;
+  }
+  main section.view4 .top {
+    padding-right: 5rem;
+  }
+  main section.view4 .bottom p {
+    font-size: 1.1rem;
+  }
+  main section.view4 .bottom .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 65%;
+  }
+  main section.view4 .bottom .buttons button {
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 0.8rem;
   }
 }/*# sourceMappingURL=style.css.map */
