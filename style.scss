@@ -86,6 +86,99 @@ main{
             }
         }
     }
+
+    section.view2{
+        width: 100%;
+        @include flex-column(1rem);
+        padding: 4rem 2rem;
+
+        .card1{
+            width: 100%;
+            @include flex-column(2rem);
+
+            .top{
+                @include flex-column(2rem);
+                padding-bottom: 2rem;
+
+                h4{
+                    font-size: 1.75rem;
+                    font-weight: 650;
+            }
+
+                p{
+                    width: 90%;
+                    font-size: 1.3rem;
+                    opacity: 0.8;
+                }
+            }
+
+            .bottom{
+                @include flex-column(0rem);
+                padding: 2rem 1rem;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        .card2{
+            width: 100%;
+            @include flex-column(2rem);
+
+            .top{
+                @include flex-column(2rem);
+                padding-bottom: 2rem;
+
+                h4{
+                    font-size: 1.75rem;
+                    font-weight: 650;
+            }
+
+                p{
+                    width: 90%;
+                    font-size: 1.3rem;
+                    opacity: 0.8;
+                }
+            }
+
+            .bottom{
+                @include flex-column(0rem);
+                padding: 2rem 1rem;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        .card3{
+            width: 100%;
+            @include flex-column(2rem);
+
+            .top{
+                @include flex-column(2rem);
+                padding-bottom: 2rem;
+
+                h4{
+                    font-size: 1.75rem;
+                    font-weight: 650;
+            }
+
+                p{
+                    width: 90%;
+                    font-size: 1.3rem;
+                    opacity: 0.8;
+                }
+            }
+
+            .bottom{
+                @include flex-column(0rem);
+                padding: 2rem 1rem;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 960px) {
@@ -177,6 +270,25 @@ main{
                 h4{
                     font-size: 2rem;
                     text-align: center;
+                }
+            }
+        }
+
+        section.view2{
+            flex-direction: row;
+            padding: 4rem 10rem;
+
+            .card1,.card2,.card3{
+                .top{
+                    @include flex-column(1rem);
+                    h4{
+                        font-size: 1.75rem;
+                        font-weight: 600;
+                    }
+
+                    p{
+                        font-size: 1.2rem;
+                    }
                 }
             }
         }
